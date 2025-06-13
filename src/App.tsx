@@ -1,6 +1,6 @@
 // src/App.tsx
 import React, { useState } from 'react';
-import { Task } from './types';
+import type { Task } from './types';
 import TaskInput from './components/TaskInput';
 import TaskList from './components/TaskList';
 
