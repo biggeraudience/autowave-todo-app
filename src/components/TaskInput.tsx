@@ -1,11 +1,11 @@
-// src/components/TaskInput.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
+import type { FC } from 'react';
 
 interface TaskInputProps {
   onAddTask: (taskText: string) => void;
 }
 
-const TaskInput: React.FC<TaskInputProps> = ({ onAddTask }) => {
+const TaskInput: FC<TaskInputProps> = ({ onAddTask }) => {
   const [taskText, setTaskText] = useState<string>('');
 
   const handleSubmit = (e: React.FormEvent) => {

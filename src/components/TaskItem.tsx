@@ -1,5 +1,4 @@
-// src/components/TaskItem.tsx
-import React from 'react';
+import type { FC } from 'react';
 import type { Task } from '../types';
 
 interface TaskItemProps {
@@ -8,7 +7,7 @@ interface TaskItemProps {
   onToggleCompletion: (taskId: string) => void;
 }
 
-const TaskItem: React.FC<TaskItemProps> = ({ task, onRemove, onToggleCompletion }) => {
+const TaskItem: FC<TaskItemProps> = ({ task, onRemove, onToggleCompletion }) => {
   return (
     <li className="flex items-center justify-between bg-gray-50 p-3 rounded-md shadow-sm">
       <div className="flex items-center">

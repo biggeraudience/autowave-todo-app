@@ -1,5 +1,4 @@
-// src/components/TaskList.tsx
-import React from 'react';
+import type { FC } from 'react';
 import type { Task } from '../types';
 import TaskItem from './TaskItem';
 
@@ -9,7 +8,7 @@ interface TaskListProps {
   onToggleTaskCompletion: (taskId: string) => void;
 }
 
-const TaskList: React.FC<TaskListProps> = ({ tasks, onRemoveTask, onToggleTaskCompletion }) => {
+const TaskList: FC<TaskListProps> = ({ tasks, onRemoveTask, onToggleTaskCompletion }) => {
   if (tasks.length === 0) {
     return <p className="text-center text-gray-500">No tasks yet. Add some!</p>;
   }
